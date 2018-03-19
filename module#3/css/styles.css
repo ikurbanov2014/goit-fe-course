@@ -1,0 +1,124 @@
+body {
+  color: #626262;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+header,
+main {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* Sit Lyfestyle navigation */
+
+.main-nav {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.main-menu {
+  width: 665px;
+  list-style: none;
+  margin: 23px auto;
+  padding: 0;
+}
+
+.main-menu-item {
+  display: inline-block;
+  padding: 0 50px;
+}
+
+.main-menu li>a:hover,
+.main-menu li>a:focus {
+  color: #e84545;
+}
+
+.main-menu-item>a {
+  color: #626262;
+  line-height: 24px;
+  font-family: "Playfair Display";
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/*Section Lifestyle*/
+
+.row-list {
+  list-style: none;
+  padding: 0;
+}
+
+.row-list-item {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 30px 4px;
+  padding: 25px;
+}
+
+.row-list-item a,
+.row-list-item img {
+  display: block;
+}
+
+.row-list-item img {
+  background-color: #f2f2f2;
+}
+
+.row-list-category {
+  color: #b4ad9e;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.row-list-item h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+}
+
+.row-list-about {
+  width: 420px;
+  height: 70px;
+  line-height: 24px;
+  font-family: "Playfair Display";
+  overflow: hidden;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 17px 40px;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  line-height: 24px;
+  color: #626262;
+  background-color: #ffffff;
+  border: 1px solid #626262;
+  cursor: pointer;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
