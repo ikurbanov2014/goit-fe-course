@@ -1,0 +1,258 @@
+@import url(fonts.css);
+
+/*header*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.main-logo {
+    margin: 0;
+    padding: 0;
+}
+
+.main-logo a {
+    color: #fed136;
+    font-family: 'WisdomScript', sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.main-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.menu-list-item a {
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s linear;
+}
+
+.menu-list-item a:hover {
+    color: #fed136;
+}
+
+
+/*Services*/
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.section-desc {
+    color: #777777;
+    font-family: 'DroidSerif-Italic', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 12px 0;
+}
+
+.content-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 60px 0 0 0;
+}
+
+.list-item a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.list-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.list-item:nth-child(1) a::before {
+    display: block;
+    content: "";
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background-image: url(../img/icon-basket.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.list-item:nth-child(2) a::before {
+    display: block;
+    content: "";
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background-image: url(../img/icon-laptop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.list-item:nth-child(3)::before {
+    display: block;
+    content: "";
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background-image: url(../img/icon-locked.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.list-item-title {
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.list-item-desc {
+    color: #777777;
+    font-family: 'RobotoSlab', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+/*Contact us*/
+
+.section-content:nth-of-type(2) {
+    background-color: #222222;
+    background-image: url(../img/map.png);
+    background-repeat: no-repeat;
+    background-position: 100% 80%;
+    padding: 12px 0;
+}
+
+.section-content:nth-of-type(2) .section-title {
+    color: #ffffff;
+}
+
+.section-content:nth-of-type(2) .section-desc {
+    margin: 0 0 65px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 940px;
+    height: 210px;
+    margin: 0 0 25px 0;
+    padding: 0;
+    list-style: none;
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.contact-form input::placeholder {
+    color: #bbbbbb;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact-form input,
+.contact-form textarea {
+    outline: 0;
+    border: 0;
+    border-left: 3px solid transparent;
+    text-overflow: ellipsis;
+}
+
+.contact-form input[name='email']:valid,
+.contact-form input[name='name']:valid,
+.contact-form textarea[name='message']:valid {
+    border-color: #008000;
+}
+
+.contact-form input[name='email']:invalid,
+.contact-form input[name='name']:invalid,
+.contact-form textarea[name='message']:invalid {
+    border-color: red;
+}
+
+.contact-form textarea::placeholder {
+    color: #bbbbbb;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.form-item input {
+    margin: 0 30px 0 0;
+    padding: 0 20px;
+}
+
+.form-item input,
+.form-item textarea {
+    width: 412px;
+    height: 50px;
+    border-radius: 2px;
+}
+
+.form-item textarea {
+    height: 178px;
+    padding: 16px 20px;
+}
+
+.form button {
+    width: 240px;
+    height: 66px;
+    margin: 0 auto 35px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #fed136;
+    border: 0;
+    border-radius: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s linear;
+    transition: background-color 0.3s linear;
+}
+
+.form button:hover {
+    color: #222222;
+    background-color: #bbbbbb;
+}
