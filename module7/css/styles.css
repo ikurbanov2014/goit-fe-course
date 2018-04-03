@@ -193,21 +193,20 @@
 .contact-form input,
 .contact-form textarea {
     outline: 0;
-    border: 0;
-    border-left: 3px solid transparent;
+    border-radius: 3px;
     text-overflow: ellipsis;
 }
 
 .contact-form input[name='email']:valid,
 .contact-form input[name='name']:valid,
 .contact-form textarea[name='message']:valid {
-    border-color: #008000;
+    outline: 2px solid #31ca31;
 }
 
 .contact-form input[name='email']:invalid,
 .contact-form input[name='name']:invalid,
 .contact-form textarea[name='message']:invalid {
-    border-color: red;
+    outline: 2px solid #ca3131;
 }
 
 .contact-form textarea::placeholder {
