@@ -1,0 +1,16 @@
+.footer__copyright {
+  color: $section-primary-color;
+  font-family: $secondary-font-stack;
+  font-size: $secondary-font-size;
+
+  .footer__link {
+    @extend %link;
+    color: $footer-primary-color;
+    text-decoration: none;
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: $primary-accent-color;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+%btn {
+  color: $header-color;
+  font-family: $secondary-font-stack;
+  font-size: $secondary-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+%link {
+  text-decoration: none;
+}
+
+%list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

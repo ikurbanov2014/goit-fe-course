@@ -1,0 +1,19 @@
+.icon {
+  cursor: pointer;
+
+  &--header {
+    width: 32px;
+    height: 32px;
+    fill: $header-color;
+    
+    &:hover {
+      fill: $header-hover-color;
+    }
+  }
+
+  &--social-buttons {
+    width: 32px;
+    height: 32px;
+    fill: $primary-accent-color;
+  }
+}

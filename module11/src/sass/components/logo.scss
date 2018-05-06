@@ -1,0 +1,12 @@
+.logo {
+  margin: 0;
+  
+  &__link {
+    @extend %link;
+    display: block;
+    color: $header-color;
+    font-family: $secondary-font-stack;
+    font-size: 30px;
+    font-weight: 700;
+  }
+}

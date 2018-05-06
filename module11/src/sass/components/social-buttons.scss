@@ -1,0 +1,35 @@
+.social-buttons {
+  @include center-flex($type: 'all');
+  @extend %list;
+  height: 470px;
+  
+  .social-buttons__link {
+    @extend %link;
+    display: block;
+    width: 55px;
+    height: 55px;
+    border: 1px solid transparent;
+    background-color: $header-hover-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+
+    &:hover:hover .icon {
+      fill: $header-color;
+    }
+
+    &:hover {
+      background-color: $primary-accent-color;
+    }
+  }
+}
+
+.social-buttons__item {
+  .social-buttons__link--facebook,
+  .social-buttons__link--twitter,
+  .social-buttons__link--pinterest,
+  .social-buttons__link--instagram:not(:last-child) {
+    border-right: 1px solid $social-buttons-border-color;
+  }
+}

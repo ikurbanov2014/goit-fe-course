@@ -1,0 +1,5 @@
+.header-nav-wrapper {
+  @include center-flex('ver');
+  justify-content: space-between;
+  min-height: 80px;
+}

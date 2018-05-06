@@ -1,0 +1,11 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  
+  &--footer {
+    @include center-flex('ver');
+    justify-content: space-between;
+    height: 60px;
+    border-top: 1px solid $footer-border-top-color;
+  }
+}
