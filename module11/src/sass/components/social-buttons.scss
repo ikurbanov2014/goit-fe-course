@@ -2,7 +2,6 @@
   @include center-flex($type: 'all');
   @extend %list;
   height: 470px;
-  
   .social-buttons__link {
     @extend %link;
     display: block;
@@ -14,11 +13,9 @@
     background-position: center;
     cursor: pointer;
     transition: background-color 0.2s linear;
-
     &:hover:hover .icon {
       fill: $header-color;
     }
-
     &:hover {
       background-color: $primary-accent-color;
     }

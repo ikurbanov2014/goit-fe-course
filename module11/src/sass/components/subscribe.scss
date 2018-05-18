@@ -1,6 +1,5 @@
 .subscribe {
   display: flex;
-
   #email {
     height: 38px;
     color: $footer-form-color;
@@ -12,11 +11,9 @@
     padding: 0 0 0 10px;
     outline: 0;
   }
-
   #email::placeholder {
     color: $footer-form-color;
   }
-
   .subscribe__btn {
     @extend %btn;
     width: 150px;
@@ -26,7 +23,6 @@
     cursor: pointer;
     outline: 0;
     transition: background-color 0.2s linear;
-
     &:hover {
       background-color: $primary-accent-color;
     }

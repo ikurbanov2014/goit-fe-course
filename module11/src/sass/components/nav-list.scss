@@ -5,7 +5,6 @@
   justify-content: space-between;
   width: 617px;
   height: 17px;
-  
   .nav-list__item {
     &:not(:nth-last-child(-n+2))>.nav-list__link:hover::after {
       @include pseudo($display: block);
@@ -17,7 +16,6 @@
       transition-duration: 0.2s;
       transition-timing-function: linear;
     }
-
     .nav-list__link {
       @extend %link;
       color: $header-color;
@@ -25,7 +23,6 @@
       font-size: $secondary-font-size;
       text-transform: uppercase;
       transition: color 0.2s linear;
-  
       &:hover {
         color: $header-hover-color;
       }

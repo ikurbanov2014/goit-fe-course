@@ -1,44 +1,34 @@
 .list__item--services {
   flex-basis: 390px;
-  
   &:not(:nth-child(3n)) {
     margin-right: 15px;
   }
-  
   &:not(:nth-last-child(-n+3)) {
     margin-bottom: 80px;
   }
-
   .photography::before {
     background-image: url(../img/icons/photography.svg);
   }
-  
   .web-design::before {
     background-image: url(../img/icons/web_design.svg);
   }
-  
   .creativity::before {
     background-image: url(../img/icons/creativity.svg);
   }
-  
   .seo::before {
     background-image: url(../img/icons/seo.svg);
   }
-  
   .css_html::before {
     background-image: url(../img/icons/css_html.svg);
   }
-  
   .digital::before {
     background-image: url(../img/icons/digital.svg);
   }
-  
   .section-list__link--services {
     @extend %link;
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
-  
     &::before {
       @include pseudo($display: block);
       align-self: flex-start;
