@@ -6,141 +6,220 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>homework-05</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,700,900');
-    </style>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/slider.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <header>
-            <nav class="page-nav">
-                <a class="site-logo" href="#">
-                    <img src="img/logo.png" alt="site-logo" width="78" height="21">
-                </a>
-                <ul class="main-nav clearfix">
-                    <li>
-                        <a href="#">Home</a>
+        <header class="header clearfix">
+            <p class="main-logo">
+                <a href="#">
+                    <span>m</span>art</a>
+            </p>
+            <nav class="main-nav">
+                <ul class="main-menu clearfix">
+                    <li class="menu-item">
+                        <a href="#">home</a>
                     </li>
-                    <li>
-                        <a href="#">About us</a>
+                    <li class="menu-item">
+                        <a href="#">about us</a>
                     </li>
-                    <li>
-                        <a href="#">Page</a>
+                    <li class="menu-item">
+                        <a href="#">page</a>
                     </li>
-                    <li>
-                        <a href="#">Shop</a>
+                    <li class="menu-item">
+                        <a href="#">shop</a>
                     </li>
-                    <li>
-                        <a href="#">Blog</a>
+                    <li class="menu-item">
+                        <a href="#">blog</a>
                     </li>
-                    <li>
-                        <a href="#">Contact us</a>
+                    <li class="menu-item">
+                        <a href="#">contact us</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <main class="main menu">
-            <h1 class="visually-hidden">main page</h1>
-            <div class="slider">
-                <button class="slider-ctrl slider-ctrl-prev">
-                    <i class="fa fa-angle-left" style="font-size:60px;color:#ffffff"></i>
-                </button>
-                <button class="slider-ctrl slider-ctrl-next">
-                    <i class="fa fa-angle-right" style="font-size:60px;color:#ffffff"></i>
-                </button>
-
-                <ul class="slides">
-                    <li class="slides-item">
-                        <img class="slides-image" src="img/Background.jpg" alt="image" width="1600" height="600">
-                        <div class="darken"></div>
-                        <p class="slides-descr">Affordable paris tours</p>
-                        <p class="slides-descr1">CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
-
+        <main class="main-content">
+            <section class="slider">
+                <ul class="slider-container">
+                    <li class="slider-item-first">
+                        <div class="slide-content">
+                            <a href="#">
+                                <h2 class="slide-title">Affordable Paris Tours</h2>
+                            </a>
+                            <p class="title-desc">City Tours / Tour Tickets / Tour Guides</p>
+                        </div>
+                    </li>
+                    <li class="slider-item-second">
+                        <div class="slide-content">
+                            <a href="#">
+                                <h2 class="slide-title">Affordable Paris Tours</h2>
+                            </a>
+                            <p class="title-desc">City Tours / Tour Tickets / Tour Guides</p>
+                        </div>
+                    </li>
+                    <li class="slider-item-third">
+                        <div class="slide-content">
+                            <a href="#">
+                                <h2 class="slide-title">Affordable Paris Tours</h2>
+                            </a>
+                            <p class="title-desc">City Tours / Tour Tickets / Tour Guides</p>
+                        </div>
                     </li>
                 </ul>
-
-            </div>
-              <div class="wrapper-again">
-                <section class="new-collection clearfix">
-                    <h2>New collection</h2>
-                    <ul class="categori clearfix">
-                        <li class="categori-item">
+                <ul class="slider-owl">
+                    <li class="prev-owl">
+                        <a href="#">
+                            <img src="./img/prev_owl.png" alt="previous slide button">
+                        </a>
+                    </li>
+                    <li class="next-owl">
+                        <a href="#">
+                            <img src="./img/next_owl.png" alt="next slide button">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="content-container">
+                <h2 class="container-title">New Collection</h2>
+                <div class="product-container">
+                    <ul class="products-list">
+                        <li class="products-list-item">
                             <a class="link-item" href="#">
-                                <img src="./img/product1.jpg" alt="Blue Tshirt" class="categori-image" width="255" height="282">
-                                <p class="categori-name item-1">Blue Tshirt</p>
+                                <img src="./img/product1.jpg" alt="product image" class="product-pic" width="255" height="282">
+                                <p class="product-name">Blue Tshirt</p>
+                                <p class="product-price">$26</p>
                             </a>
-                            <div class="categori-item-darken">
-                                <span class="button-fastening">
-                                    <button class="button like"></button>
-                                    <button class="button switch"></button>
-                                    <button class="button clock"></button>
-                                    <button class="button add-to-cart">Add to cart</button>
-                                </span>
+                            <div class="quick-button">
+                                <ul class="quick-list-buttons clearfix">
+                                    <li class="list-buttons-item">
+                                        <button class="add-to-wishlist">
+                                            <span class="visually-hidden">Add to wishlist</span>
+                                        </button>
+                                    </li>
+                                    <li class="list-buttons-item">
+                                        <button class="add-to-compare">
+                                            <span class="visually-hidden">Add to compare</span>
+                                        </button>
+                                    </li>
+                                    <li class="list-buttons-item">
+                                        <button class="add-to-wait">
+                                            <span class="visually-hidden">Add to wait</span>
+                                        </button>
+                                    </li>
+                                    <li class="list-buttons-item">
+                                        <button class="add-to-cart clearfix">
+                                            <span>Add to cart</span>
+                                        </button>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
-                        <li class="categori-item">
+                        <li class="products-list-item">
                             <a class="link-item" href="#">
-                                <img src="./img/product2.jpg" alt="Woman shirt" class="categori-image" width="255" height="282">
-                                <p class="categori-name item-2">Woman shirt</p>
+                                <img src="./img/product2.jpg" alt="product image" class="product-pic" width="255" height="282">
+                                <p class="product-name">Woman shirt</p>
+                                <p class="product-price">$31</p>
                             </a>
-                            <div class="categori-item-darken">
-                                <span class="button-fastening">
-                                    <button class="button like"></button>
-                                    <button class="button switch"></button>
-                                    <button class="button clock"></button>
-                                    <button class="button add-to-cart">Add to cart</button>
-                                </span>
+                            <div class="quick-button">
+                                <ul class="quick-list-buttons clearfix">
+                                    <li class="list-buttons-item">
+                                        <button class="add-to-wishlist">
+                                            <span class="visually-hidden">Add to wishlist</span>
+                                        </button>
+                                    </li>
+                                    <li class="list-buttons-item">
+                                        <button class="add-to-compare">
+                                            <span class="visually-hidden">Add to compare</span>
+                                        </button>
+                                    </li>
+                                    <li class="list-buttons-item">
+                                        <button class="add-to-wait">
+                                            <span class="visually-hidden">Add to wait</span>
+                                        </button>
+                                    </li>
+                                    <li class="list-buttons-item">
+                                        <button class="add-to-cart clearfix">
+                                            <span>Add to cart</span>
+                                        </button>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
-                        <li class="categori-item">
+                        <li class="products-list-item">
                             <a class="link-item" href="#">
-                                <img src="./img/product3.jpg" alt="Yellow Tshirt" class="categori-image" width="255" height="282">
-                                <p class="categori-name item-3">Yellow Tshirt</p>
+                                <img src="./img/product3.jpg" alt="product image" class="product-pic" width="255" height="282">
+                                <p class="product-name">Yellow tshirt</p>
+                                <p class="product-price">$21</p>
                             </a>
-                            <div class="categori-item-darken">
-                                <span class="button-fastening">
-                                    <button class="button like"></button>
-                                    <button class="button switch"></button>
-                                    <button class="button clock"></button>
-                                    <button class="button add-to-cart">Add to cart</button>
-                                </span>
+                            <div class="quick-button">
+                                <ul class="quick-list-buttons clearfix">
+                                    <li class="list-buttons-item">
+                                        <button class="add-to-wishlist">
+                                            <span class="visually-hidden">Add to wishlist</span>
+                                        </button>
+                                    </li>
+                                    <li class="list-buttons-item">
+                                        <button class="add-to-compare">
+                                            <span class="visually-hidden">Add to compare</span>
+                                        </button>
+                                    </li>
+                                    <li class="list-buttons-item">
+                                        <button class="add-to-wait">
+                                            <span class="visually-hidden">Add to wait</span>
+                                        </button>
+                                    </li>
+                                    <li class="list-buttons-item">
+                                        <button class="add-to-cart clearfix">
+                                            <span>Add to cart</span>
+                                        </button>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
-                        <li class="categori-item">
+                        <li class="products-list-item">
                             <a class="link-item" href="#">
-                                <img src="./img/product4.jpg" alt="Cool lingerie" class="categori-image" width="255" height="282">
-                                <p class="categori-name item-4">Cool lingerie</p>
+                                <img src="./img/product4.jpg" alt="product image" class="product-pic" width="255" height="282">
+                                <p class="product-name">Cool lingerie</p>
+                                <p class="product-price">$56</p>
                             </a>
-                            <div class="categori-item-darken">
-                                <span class="button-fastening">
-                                    <button class="button like"></button>
-                                    <button class="button switch"></button>
-                                    <button class="button clock"></button>
-                                    <button class="button add-to-cart">Add to cart</button>
-                                </span>
+                            <div class="quick-button">
+                                <ul class="quick-list-buttons clearfix">
+                                    <li class="list-buttons-item">
+                                        <button class="add-to-wishlist">
+                                            <span class="visually-hidden">Add to wishlist</span>
+                                        </button>
+                                    </li>
+                                    <li class="list-buttons-item">
+                                        <button class="add-to-compare">
+                                            <span class="visually-hidden">Add to compare</span>
+                                        </button>
+                                    </li>
+                                    <li class="list-buttons-item">
+                                        <button class="add-to-wait">
+                                            <span class="visually-hidden">Add to wait</span>
+                                        </button>
+                                    </li>
+                                    <li class="list-buttons-item">
+                                        <button class="add-to-cart clearfix">
+                                            <span>Add to cart</span>
+                                        </button>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
                     </ul>
-                </section>
-            </div>
+                </div>
+            </section>
         </main>
-
-        <footer class="page-footer">
-            <div class="designed">
-                <p>All Rights Reserved © Dokan | Designed
-                    <a href="#">ThemenGraph</a>
-                </p>
-            </div>
-
+        <footer class="footer">
+            <p class="copyright-desc">All Rights Reserved © Dokan | Designed
+                <a href="#">ThemenGraph</a>
+            </p>
         </footer>
-        </div>
-
-
+    </div>
 </body>
 
 </html>
